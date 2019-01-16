@@ -13,7 +13,6 @@
         {
             InitializeComponent();
             Pnl_Container.Add(DashBoardView);
-            Tools.CheckForUpdate();
         }
 
         private void OnMenuClicked(object sender, OnMenuClickedEventArgs e)

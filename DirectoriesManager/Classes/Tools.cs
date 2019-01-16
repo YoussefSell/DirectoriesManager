@@ -1,5 +1,4 @@
 ﻿using System;
-using Squirrel;
 using System.IO;
 using System.IO.Expand;
 using System.Windows.Forms;
@@ -189,14 +188,6 @@ namespace DirectoriesManager
             }
 
             return string.Format("{0:n" + decimalPlaces + "} {1}",adjustedSize,SizeSuffixes[mag]);
-        }
-
-        internal async static void CheckForUpdate()
-        {
-            using (var manager = UpdateManager.GitHubUpdateManager(@""))
-            {
-                await manager.Result.UpdateApp();
-            }
         }
     }
     
